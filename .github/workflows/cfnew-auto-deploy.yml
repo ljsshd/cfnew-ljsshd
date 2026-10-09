@@ -16,7 +16,7 @@ jobs:
           unzip -o Pages.zip -d out
 
       - name: Deploy to Cloudflare Pages
-        run: npx wrangler pages deploy out --project-name=cfnew
+        run: npx wrangler pages deploy out --project-name=cfnew-ljsshd
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
